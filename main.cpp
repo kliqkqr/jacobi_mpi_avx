@@ -1,13 +1,10 @@
 #include <iostream>
 
 #include <mpi.h>
+#include "mpi.h"
 
 int main(int argc, char** argv) {
-    MPI_Init(&argc, &argv);
+    int test = MPI_PAULP_TEST;
 
-    int rank;
-    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-
-    std::cout << "rank: " << rank << std::endl;
     return 0;
 }

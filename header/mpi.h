@@ -1,0 +1,6 @@
+#ifndef JACOBI_MPI_AVX_MPI_H
+#define JACOBI_MPI_AVX_MPI_H
+
+const int MPI_PAULP_TEST = 10;
+
+#endif //JACOBI_MPI_AVX_MPI_H
