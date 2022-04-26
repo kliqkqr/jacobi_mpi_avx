@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 if (UNIX)
     find_package(MPI REQUIRED)
     include_directories(SYSTEM ${MPI_INCLUDE_PATH})
+    include_directories(header)
 else () # WINDOWS
     set(CMAKE_EXE_LINKER_FLAGS "-static")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native -mavx")
